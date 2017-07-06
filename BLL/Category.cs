@@ -6,7 +6,6 @@ namespace BLL
 {
     public class Category
     {
-       
         public int AddCategory(string catName, string catDescription)
         {
             using (SqlConnection con = DatabaseConn.connection())
@@ -25,7 +24,5 @@ namespace BLL
                 }
             }
         }
-
     }
-
 }
