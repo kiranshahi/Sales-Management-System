@@ -1,0 +1,9 @@
+C:\Users\user\Documents\Visual Studio 2017\Projects\SalesManagementSystem\SalesManagementSystem\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\user\Documents\Visual Studio 2017\Projects\SalesManagementSystem\SalesManagementSystem\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\user\Documents\Visual Studio 2017\Projects\SalesManagementSystem\SalesManagementSystem\bin\roslyn\VBCSCompiler.exe
+C:\Users\user\documents\visual studio 2017\Projects\SalesManagementSystem\SalesManagementSystem\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\user\documents\visual studio 2017\Projects\SalesManagementSystem\SalesManagementSystem\bin\roslyn\System.IO.Compression.dll
+C:\Users\user\documents\visual studio 2017\Projects\SalesManagementSystem\SalesManagementSystem\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\user\documents\visual studio 2017\Projects\SalesManagementSystem\SalesManagementSystem\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\user\documents\visual studio 2017\Projects\SalesManagementSystem\SalesManagementSystem\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\user\documents\visual studio 2017\Projects\SalesManagementSystem\SalesManagementSystem\bin\roslyn\System.Xml.XPath.XDocument.dll

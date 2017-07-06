@@ -1,0 +1,4 @@
+C:\Users\user\documents\visual studio 2017\Projects\SalesManagementSystem\DAL\bin\Debug\DAL.dll
+C:\Users\user\documents\visual studio 2017\Projects\SalesManagementSystem\DAL\bin\Debug\DAL.pdb
+C:\Users\user\documents\visual studio 2017\Projects\SalesManagementSystem\DAL\obj\Debug\DAL.dll
+C:\Users\user\documents\visual studio 2017\Projects\SalesManagementSystem\DAL\obj\Debug\DAL.pdb
