@@ -4,7 +4,7 @@ using System.Data;
 
 namespace BLL
 {
-    public class Item
+    public class BLLItem
     {
         public DataTable LoadCat()
         {

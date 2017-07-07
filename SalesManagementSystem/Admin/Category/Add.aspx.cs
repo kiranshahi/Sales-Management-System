@@ -5,7 +5,7 @@ namespace SalesManagementSystem
 {
     public partial class AddCategories : System.Web.UI.Page
     {
-        Category bllCat = new Category();
+        BLLCategory bllCat = new BLLCategory();
         protected void Page_Load(object sender, EventArgs e)
         {
 

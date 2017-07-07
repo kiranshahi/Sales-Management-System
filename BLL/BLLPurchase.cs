@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace BLL
 {
-    public class Purchase
+    public class BLLPurchase
     {
         /**
          * Load Item Name to Select option dropdown list

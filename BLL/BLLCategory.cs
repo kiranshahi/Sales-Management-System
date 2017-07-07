@@ -4,7 +4,7 @@ using System.Data;
 
 namespace BLL
 {
-    public class Category
+    public class BLLCategory
     {
         public int AddCategory(string catName, string catDescription)
         {

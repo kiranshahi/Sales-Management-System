@@ -132,11 +132,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="Admin\AddPurchase.aspx" />
+    <Content Include="Admin\Category\Default.aspx" />
+    <Content Include="Admin\Purchase\Add.aspx" />
     <Content Include="Admin\Item\Add.aspx" />
     <Content Include="Admin\Category\Add.aspx" />
-    <Content Include="Admin\AddItemDetails.aspx" />
-    <Content Include="Admin\AddSubCat.aspx" />
+    <Content Include="Admin\ItemDetails\Add.aspx" />
+    <Content Include="Admin\SubCat\Add.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-datetimepicker.css" />
     <Content Include="Content\bootstrap-datetimepicker.min.css" />
@@ -293,12 +294,19 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\AddPurchase.aspx.cs">
-      <DependentUpon>AddPurchase.aspx</DependentUpon>
+    <Compile Include="Admin\Category\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\AddPurchase.aspx.designer.cs">
-      <DependentUpon>AddPurchase.aspx</DependentUpon>
+    <Compile Include="Admin\Category\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Purchase\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Purchase\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Item\Add.aspx.cs">
       <DependentUpon>Add.aspx</DependentUpon>
@@ -321,19 +329,19 @@
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AddItemDetails.aspx.cs">
-      <DependentUpon>AddItemDetails.aspx</DependentUpon>
+    <Compile Include="Admin\ItemDetails\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\AddItemDetails.aspx.designer.cs">
-      <DependentUpon>AddItemDetails.aspx</DependentUpon>
+    <Compile Include="Admin\ItemDetails\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AddSubCat.aspx.cs">
-      <DependentUpon>AddSubCat.aspx</DependentUpon>
+    <Compile Include="Admin\SubCat\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\AddSubCat.aspx.designer.cs">
-      <DependentUpon>AddSubCat.aspx</DependentUpon>
+    <Compile Include="Admin\SubCat\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">

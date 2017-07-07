@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 
 namespace BLL
 {
-    public class ItemDetails
+    public class BLLItemDetails
     {
         public DataTable LoadItemName()
         {

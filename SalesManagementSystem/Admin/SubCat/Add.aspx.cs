@@ -6,7 +6,7 @@ namespace SalesManagementSystem
 {
     public partial class AddSubCat : System.Web.UI.Page
     {
-        SubCategory newSubCategory = new SubCategory();
+        BLLSubCategory newSubCategory = new BLLSubCategory();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)

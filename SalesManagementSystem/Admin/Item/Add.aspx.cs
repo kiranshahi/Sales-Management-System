@@ -6,7 +6,7 @@ namespace SalesManagementSystem
 {
     public partial class AddItem : System.Web.UI.Page
     {
-        Item newItem = new Item();
+        BLLItem newItem = new BLLItem();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)

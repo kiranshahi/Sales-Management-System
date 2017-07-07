@@ -6,7 +6,7 @@ namespace SalesManagementSystem
 {
     public partial class AddPurchase : System.Web.UI.Page
     {
-        Purchase newPurchase = new Purchase();
+        BLLPurchase newPurchase = new BLLPurchase();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)

@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 
 namespace BLL
 {
-    public class SubCategory
+    public class BLLSubCategory
     {
         public DataTable LoadCatName()
         {
