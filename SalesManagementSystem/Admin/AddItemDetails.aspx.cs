@@ -1,6 +1,6 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Data;
-using BLL;
 
 namespace SalesManagementSystem
 {

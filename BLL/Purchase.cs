@@ -27,15 +27,16 @@ namespace BLL
         /**
          * Load Item Color to Select option dropdown list
          **/
-        public DataTable LoadColor()
+        public DataTable LoadColor(int itemId)
         {
             string queryItem = "select * from ItemDetails Where ItemID = @itemId";
             using (SqlConnection con = DatabaseConn.connection())
             {
-                using (SqlDataAdapter getItemCommand = new SqlDataAdapter(queryItem, con))
+                using (SqlDataAdapter getColorCommand = new SqlDataAdapter(queryItem, con))
                 {
+                    getColorCommand.SelectCommand.Parameters.AddWithValue("@itemId", itemId);
                     DataTable dt = new DataTable();
-                    getItemCommand.Fill(dt);
+                    getColorCommand.Fill(dt);
                     return dt;
                 }
             }

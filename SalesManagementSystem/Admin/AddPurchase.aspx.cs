@@ -26,8 +26,9 @@ namespace SalesManagementSystem
         {
             if (selectItem.SelectedIndex>0)
             {
+                int itemId = int.Parse(selectItem.SelectedValue);
                 /** Set Item name and Item ID to Select option from Item Table **/
-                DataTable dt = newPurchase.LoadColor();
+                DataTable dt = newPurchase.LoadColor(itemId);
                 selectColor.DataSource = dt;
                 selectColor.DataTextField = "Color";
                 selectColor.DataValueField = "ItemDetailsID";

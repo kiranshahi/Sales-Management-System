@@ -12,7 +12,7 @@
     <div class="form-group row">
         <label for="selectColor" class="col-sm-2">Color:</label>
         <div class="col-sm-8">
-            <asp:DropDownList ID="selectColor" CssClass="form-control" runat="server" AutoPostBack="True" OnSelectedIndexChanged="selectColor_SelectedIndexChanged"></asp:DropDownList>
+            <asp:DropDownList ID="selectColor" CssClass="form-control" runat="server" AutoPostBack="True" OnSelectedIndexChanged="SelectColor_SelectedIndexChanged"></asp:DropDownList>
         </div>
     </div>
     
@@ -59,7 +59,7 @@
     </div>
 
     <div class="form-group row">
-        <asp:Button ID="btnSavePurchase" runat="server" Text="Save Purchase" CssClass="btn btn-success" OnClick="btnSavePurchase_Click"/>
+        <asp:Button ID="btnSavePurchase" runat="server" Text="Save Purchase" CssClass="btn btn-success" OnClick="BtnSavePurchase_Click"/>
     </div>
 
 </asp:Content>
