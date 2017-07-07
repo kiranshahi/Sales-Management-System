@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AddPurchase.aspx.cs" Inherits="SalesManagementSystem.AddPurchase" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Add.aspx.cs" Inherits="SalesManagementSystem.AddPurchase" %>
 
 <asp:Content ID="AddPurchase" ContentPlaceHolderID="body" runat="server">
 

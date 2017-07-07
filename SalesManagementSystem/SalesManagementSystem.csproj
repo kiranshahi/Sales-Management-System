@@ -133,8 +133,8 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Admin\AddPurchase.aspx" />
-    <Content Include="Admin\AddItem.aspx" />
-    <Content Include="Admin\AddCategories.aspx" />
+    <Content Include="Admin\Item\Add.aspx" />
+    <Content Include="Admin\Category\Add.aspx" />
     <Content Include="Admin\AddItemDetails.aspx" />
     <Content Include="Admin\AddSubCat.aspx" />
     <Content Include="Contact.aspx" />
@@ -300,19 +300,19 @@
     <Compile Include="Admin\AddPurchase.aspx.designer.cs">
       <DependentUpon>AddPurchase.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AddItem.aspx.cs">
-      <DependentUpon>AddItem.aspx</DependentUpon>
+    <Compile Include="Admin\Item\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\AddItem.aspx.designer.cs">
-      <DependentUpon>AddItem.aspx</DependentUpon>
+    <Compile Include="Admin\Item\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AddCategories.aspx.cs">
-      <DependentUpon>AddCategories.aspx</DependentUpon>
+    <Compile Include="Admin\Category\Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\AddCategories.aspx.designer.cs">
-      <DependentUpon>AddCategories.aspx</DependentUpon>
+    <Compile Include="Admin\Category\Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>

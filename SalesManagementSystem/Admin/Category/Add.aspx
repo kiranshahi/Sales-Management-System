@@ -1,7 +1,7 @@
-﻿<%@ Page Title="Add Categories" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AddCategories.aspx.cs" Inherits="SalesManagementSystem.AddCategories" %>
+﻿<%@ Page Title="Add Categories" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Add.aspx.cs" Inherits="SalesManagementSystem.AddCategories" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="addCatForm" ContentPlaceHolderID="main" runat="server">
+<asp:Content ID="addCatForm" ContentPlaceHolderID="body" runat="server">
         <div class="form-group">
             <label for="catName">Category Name:</label>
             <asp:TextBox ID="catName" runat="server" CssClass="form-control" required></asp:TextBox>
