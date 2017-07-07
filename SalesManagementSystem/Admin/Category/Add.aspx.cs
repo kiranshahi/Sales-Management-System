@@ -8,6 +8,13 @@ namespace SalesManagementSystem
         BLLCategory bllCat = new BLLCategory();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["userName"] != null)
+            {
+            }
+            else
+            {
+                Response.Redirect("~/Admin/Default");
+            }
 
         }
 

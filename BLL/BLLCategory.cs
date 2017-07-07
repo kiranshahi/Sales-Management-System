@@ -24,5 +24,21 @@ namespace BLL
                 }
             }
         }
+
+        public DataTable SelectCategories()
+        {
+            using (SqlConnection con = DatabaseConn.connection())
+            {
+                /***
+                 * Insert catName and catDescription to ItemCategory Table.
+                 * stored procedure insertItemCat takes @catName varchar(50) and @catDescription varchar(MAX)
+                 ***/
+                string query = "SELECT * FROM ItemCategory";
+                SqlDataAdapter getCatCommand = new SqlDataAdapter(query, con);
+                DataTable ds = new DataTable();
+                getCatCommand.Fill(ds);
+                return ds;
+            }
+        }
     }
 }
