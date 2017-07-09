@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="SalesManagementSystem.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reset.aspx.cs" Inherits="SalesManagementSystem.Reset" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -18,7 +18,7 @@
     <div class="container body-content">
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
-                <h1 class="text-center login-heading">Login !</h1>
+                <h1 class="text-center login-heading">Reset Password !</h1>
                 <div id="login_error" runat="server">
                     <label id="lblErrorMessage"  class="text-danger" runat="server"></label>
                 </div>
@@ -26,21 +26,14 @@
                     <form id="loginForm" runat="server">
                         <div class="form-group">
                             <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="example@yourdomain.com" name="email" runat="server" />
+                            <input type="email" class="form-control" id="txtEmail" placeholder="example@yourdomain.com" name="email" runat="server" />
                         </div>
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Password" name="password" runat="server" />
-                        </div>
-                
                         <div class="checkbox">
-                            <label>
-                                <input type="checkbox" /> Remember Me
-                            </label>
-                            <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btn btn-primary pull-right" OnClick="BtnLogin_Click"/>
-                        </div>
+                            <label></label>
+                            <asp:Button ID="btnReset" runat="server" Text="Get New Password" CssClass="btn btn-primary pull-right" OnClick="btnReset_Click"/>
+                        </div> 
                         <hr />
-                        <a class="text-center" runat="server" href="~/Admin/Reset">Lost your password?</a>
+                        <a class="text-center" runat="server" href="~/Admin">Log in</a>
 
                         <asp:ScriptManager runat="server">
                             <Scripts>

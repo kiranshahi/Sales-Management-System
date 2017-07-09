@@ -1,4 +1,7 @@
 ﻿<%@ Page Title="Category List" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="SalesManagementSystem.Category.Default" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="Name" runat="server">
+    <span id="lblName" runat="server"></span>
+</asp:content>
 <asp:Content ID="catList" ContentPlaceHolderID="body" runat="server">
     <asp:GridView ID="grdCategory" AutoGenerateColumns="False" runat="server" CssClass="table table-hover" OnRowDataBound="grdCategory_RowDataBound">
         <Columns>

@@ -7,6 +7,7 @@ body {
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
+    margin-top:20px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -30,5 +31,55 @@ textarea {
     }
 }
 .login {
-    background-color: #f1f1f1;
+    background: #f1f1f1;
 }
+
+
+.login #login_error {
+    border-left: 4px solid #dc3232;
+    padding: 12px;
+    margin: 20px 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+
+.login-box {
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 26px 24px 46px;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.13);
+    box-shadow: 0 1px 3px rgba(0,0,0,.13);
+}
+
+.login-box input {
+        max-width: none;
+}
+
+.login-box input[type=email],
+.login-box input[type=password] {
+    border-radius: unset;
+}
+
+.login-heading {
+    font-weight: 500;
+    color: #563d7c;
+}
+
+.login-box label {
+    color: #72777c;
+    font-size: 14px;
+}
+
+.user-profile img {
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.nav.navbar-nav > li > a:hover {
+    background: #D9DEE4 !important;
+}
+

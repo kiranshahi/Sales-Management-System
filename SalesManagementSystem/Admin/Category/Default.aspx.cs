@@ -15,6 +15,7 @@ namespace SalesManagementSystem.Category
                 if (!IsPostBack)
                 {
                     LoadCat();
+                    lblName.InnerText = Session["userName"].ToString();
                 }
             }
             else

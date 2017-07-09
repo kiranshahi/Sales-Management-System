@@ -5,7 +5,7 @@
     <div class="form-group row">
         <label for="selectItem" class="col-sm-2">Item:</label>
         <div class="col-sm-8">
-            <asp:DropDownList ID="selectItem" CssClass="form-control" runat="server" AutoPostBack="True" OnSelectedIndexChanged="SelectItem_SelectedIndexChanged"></asp:DropDownList>
+            <asp:DropDownList ID="selectItem" CssClass="form-control" runat="server" AutoPostBack="True" OnSelectedIndexChanged="SelectItem_SelectedIndexChanged" EnableTheming="True"></asp:DropDownList>
         </div>
     </div>
 
