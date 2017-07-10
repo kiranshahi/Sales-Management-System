@@ -136,7 +136,10 @@
     <Content Include="Admin\Category\Delete.aspx" />
     <Content Include="Admin\Category\Details.aspx" />
     <Content Include="Admin\Category\Edit.aspx" />
+    <Content Include="Admin\ItemDetails\Default.aspx" />
+    <Content Include="Admin\ItemDetails\Edit.aspx" />
     <Content Include="Admin\Item\Default.aspx" />
+    <Content Include="Admin\Item\Delete.aspx" />
     <Content Include="Admin\Item\Details.aspx" />
     <Content Include="Admin\Item\Edit.aspx" />
     <Content Include="Admin\Profile.aspx" />
@@ -335,12 +338,33 @@
     <Compile Include="Admin\Category\Edit.aspx.designer.cs">
       <DependentUpon>Edit.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\ItemDetails\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ItemDetails\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ItemDetails\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ItemDetails\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Item\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\Item\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Item\Delete.aspx.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Item\Delete.aspx.designer.cs">
+      <DependentUpon>Delete.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Item\Details.aspx.cs">
       <DependentUpon>Details.aspx</DependentUpon>

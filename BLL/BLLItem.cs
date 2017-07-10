@@ -106,6 +106,17 @@ namespace BLL
                 }
             }
         }
-
+        public int ChangeToDeleted(int itemId)
+        {
+            using (SqlConnection con = DatabaseConn.connection())
+            {
+                string updateQuery = "UPDATE Item SET IsDeleted = 1 where ItemID = @itemId";
+                using (SqlCommand cmd = new SqlCommand(updateQuery, con))
+                {
+                    cmd.Parameters.AddWithValue("@itemId", itemId);
+                    return cmd.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }

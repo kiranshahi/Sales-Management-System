@@ -52,7 +52,11 @@ namespace BLL
                 cmd.Parameters.AddWithValue("@lastName", lastName);
                 cmd.Parameters.AddWithValue("@email", email);
                 cmd.Parameters.AddWithValue("@phone", phone);
-                return cmd.ExecuteNonQuery();
+                if (!String.IsNullOrWhiteSpace(password))
+                {
+                    cmd.Parameters.AddWithValue("@password", password);
+                }
+                    return cmd.ExecuteNonQuery();
             }
         }
     }

@@ -2,18 +2,18 @@
 using System;
 using System.Data;
 
-namespace SalesManagementSystem.Item
+namespace SalesManagementSystem.ItemDetails
 {
     public partial class Default : System.Web.UI.Page
     {
-        BLLItem itemObj = new BLLItem();
+        BLLItemDetails itemDetailsObj = new BLLItemDetails();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["userName"] != null)
             {
                 if (!IsPostBack)
                 {
-                    LoadProduct();
+                    LoadItems();
                     lblName.InnerText = Session["userName"].ToString();
                 }
             }
@@ -22,11 +22,11 @@ namespace SalesManagementSystem.Item
                 Response.Redirect("~/Admin/Default");
             }
         }
-        protected void LoadProduct()
+        protected void LoadItems()
         {
-            DataTable dt = itemObj.SelectItems();
-            grdItem.DataSource = dt;
-            grdItem.DataBind();
+            DataTable dt = itemDetailsObj.SelectItemDetails();
+            grdItemDetails.DataSource = dt;
+            grdItemDetails.DataBind();
         }
     }
 }
