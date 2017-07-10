@@ -1,0 +1,1 @@
+﻿<%@ Page Title="Delete Item" Language="C#"  AutoEventWireup="true" CodeBehind="Delete.aspx.cs" Inherits="SalesManagementSystem.Item.Delete" %>

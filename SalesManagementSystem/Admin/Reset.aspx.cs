@@ -32,6 +32,7 @@ namespace SalesManagementSystem
                 if (isEmailExisted)
                 {
                     loginObj.sendEmail(email);
+                    lblErrorMessage.InnerText = "Password sent successfully.";
                 }
                 else
                 {

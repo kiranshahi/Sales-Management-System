@@ -67,6 +67,20 @@ namespace BLL
                 smtp.Credentials = networkCred;
                 smtp.Port = 587;
                 smtp.Send(mm);
+                updatePassword(userEmail, strpassword);
+            }
+        }
+
+        public int updatePassword(string email, string strpassword)
+        {
+            using (SqlConnection con = DatabaseConn.connection())
+            {
+                string updateQuery = "updatePassword";
+                SqlCommand updateCmd = new SqlCommand(updateQuery, con);
+                updateCmd.CommandType = CommandType.StoredProcedure;
+                updateCmd.Parameters.AddWithValue("@password", strpassword);
+                updateCmd.Parameters.AddWithValue("@email", email);
+                return updateCmd.ExecuteNonQuery();
             }
         }
     }

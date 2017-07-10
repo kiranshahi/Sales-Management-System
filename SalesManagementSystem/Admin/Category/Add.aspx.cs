@@ -20,10 +20,19 @@ namespace SalesManagementSystem
 
         protected void InsertCat(object sender, EventArgs e)
         {
-            int i = bllCat.AddCategory(catName.Text, catDescription.InnerText);
-            if (i>0)
+            if (String.IsNullOrWhiteSpace(txtCatName.Text))
             {
-                // Some message here
+                lblMessage.InnerText = "Category Name cannot be empty";
+            } else
+            {
+                int i = bllCat.AddCategory(txtCatName.Text, txtCatDescription.InnerText);
+                if (i > 0)
+                {
+                    lblMessage.InnerText = "Category added successfully.";
+                    txtCatName.Text = String.Empty;
+                    txtCatDescription.InnerText = String.Empty;
+
+                }
             }
         }
     }

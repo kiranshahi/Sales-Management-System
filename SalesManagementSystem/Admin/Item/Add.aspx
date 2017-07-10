@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="Add Items" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Add.aspx.cs" Inherits="SalesManagementSystem.AddItem" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<asp:Content ID="name" ContentPlaceHolderID="Name" runat="server">
+    <span id="lblName" runat="server"></span>
 </asp:Content>
 <asp:Content ID="addCatForm" ContentPlaceHolderID="body" runat="server">
         
@@ -19,7 +20,7 @@
     </div>
         
     <div class="form-group row">
-        <asp:Button ID="btnSaveCat" runat="server" Text="Save Category" CssClass="btn btn-success" OnClick="btnSaveCat_Click" />
+        <asp:Button ID="btnSaveItem" runat="server" Text="Save Item" CssClass="btn btn-success" OnClick="BtnSaveItem_Click" />
     </div>
 
 </asp:Content>

@@ -7,54 +7,54 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SalesManagementSystem {
+namespace SalesManagementSystem.Category {
     
     
-    public partial class AddItem {
+    public partial class Edit {
         
         /// <summary>
-        /// lblName control.
+        /// lblMessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblName;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblMessage;
         
         /// <summary>
-        /// itemName control.
+        /// catId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox itemName;
+        protected global::System.Web.UI.WebControls.HiddenField catId;
         
         /// <summary>
-        /// selectSubCat control.
+        /// txtCatName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList selectSubCat;
+        protected global::System.Web.UI.WebControls.TextBox txtCatName;
         
         /// <summary>
-        /// itemDescription control.
+        /// txtCatDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea itemDescription;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea txtCatDescription;
         
         /// <summary>
-        /// btnSaveItem control.
+        /// btnUpdateCat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSaveItem;
+        protected global::System.Web.UI.WebControls.Button btnUpdateCat;
     }
 }

@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SalesManagementSystem {
+namespace SalesManagementSystem.Item {
     
     
-    public partial class AddItem {
+    public partial class Details {
         
         /// <summary>
         /// lblName control.
@@ -22,39 +22,48 @@ namespace SalesManagementSystem {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblName;
         
         /// <summary>
+        /// lblMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMessage;
+        
+        /// <summary>
         /// itemName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox itemName;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl itemName;
         
         /// <summary>
-        /// selectSubCat control.
+        /// subCat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList selectSubCat;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl subCat;
         
         /// <summary>
-        /// itemDescription control.
+        /// category control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea itemDescription;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl category;
         
         /// <summary>
-        /// btnSaveItem control.
+        /// itemDesc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSaveItem;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl itemDesc;
     }
 }

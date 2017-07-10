@@ -32,6 +32,7 @@ namespace SalesManagementSystem
                 if (dt.Rows.Count > 0)
                 {
                     Session.Add("userName", dt.Rows[0]["FirstName"].ToString() + " " +dt.Rows[0]["LastName"].ToString());
+                    Session.Add("userId", dt.Rows[0]["UserID"].ToString());
                     Response.Redirect("~/Admin/Category");
                 }
                 else

@@ -1,8 +1,9 @@
-﻿<%@ Page Title="Add Categories" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Add.aspx.cs" Inherits="SalesManagementSystem.AddCategories" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="addCatForm" ContentPlaceHolderID="body" runat="server">
+﻿<%@ Page Title="Edit Category" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Edit.aspx.cs" Inherits="SalesManagementSystem.Category.Edit" %>
+<asp:Content ID="editCatForm" ContentPlaceHolderID="body" runat="server">
     <label id="lblMessage" runat="server"></label>
+    
+    <asp:HiddenField ID="catId" runat="server"/>
+    
     <div class="form-group">
         <label for="catName">Category Name:</label>
         <asp:TextBox ID="txtCatName" runat="server" CssClass="form-control" required></asp:TextBox>
@@ -14,7 +15,6 @@
     </div>
     
     <div class="form-group row">
-        <asp:Button ID="btnSaveCat" runat="server" Text="Save Category" CssClass="btn btn-success" OnClick="InsertCat"/>
+        <asp:Button ID="btnUpdateCat" runat="server" Text="Update Category" CssClass="btn btn-success" OnClick="BtnUpdateCat_Click"/>
     </div>
-
 </asp:Content>

@@ -92,7 +92,7 @@ namespace BLL
         {
             using (SqlConnection con = DatabaseConn.connection())
             {
-                string queryUpdateQuantity = "UpdateQuantity";
+                string queryUpdateQuantity = "updateQuantity";
                 using (SqlCommand cmd = new SqlCommand(queryUpdateQuantity, con))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;

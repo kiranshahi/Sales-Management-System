@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SalesManagementSystem {
+namespace SalesManagementSystem.Item {
     
     
-    public partial class AddItem {
+    public partial class Default {
         
         /// <summary>
         /// lblName control.
@@ -22,39 +22,30 @@ namespace SalesManagementSystem {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblName;
         
         /// <summary>
-        /// itemName control.
+        /// searchInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox itemName;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText searchInput;
         
         /// <summary>
-        /// selectSubCat control.
+        /// btnSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList selectSubCat;
+        protected global::System.Web.UI.WebControls.Button btnSearch;
         
         /// <summary>
-        /// itemDescription control.
+        /// grdCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea itemDescription;
-        
-        /// <summary>
-        /// btnSaveItem control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSaveItem;
+        protected global::System.Web.UI.WebControls.GridView grdCategory;
     }
 }

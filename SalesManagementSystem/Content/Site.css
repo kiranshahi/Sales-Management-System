@@ -83,3 +83,6 @@ textarea {
     background: #D9DEE4 !important;
 }
 
+.form-inline .input-group {
+    margin-bottom: 20px;
+}

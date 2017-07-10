@@ -11,18 +11,25 @@ namespace SalesManagementSystem
         {
             if (!IsPostBack)
             {
-                DataTable ds = newItem.LoadCat();
-                if (ds.Rows.Count>0)
+                if (Session["userName"] != null)
                 {
-                    selectSubCat.DataSource = ds;
-                    selectSubCat.DataTextField = "SubCategoryName";
-                    selectSubCat.DataValueField = "ItemSubCategoryID";
-                    selectSubCat.DataBind();
+                    DataTable ds = newItem.LoadCat();
+                    if (ds.Rows.Count > 0)
+                    {
+                        selectSubCat.DataSource = ds;
+                        selectSubCat.DataTextField = "SubCategoryName";
+                        selectSubCat.DataValueField = "ItemSubCategoryID";
+                        selectSubCat.DataBind();
+                    }
+                }
+                else
+                {
+                    Response.Redirect("~/Admin/Default");
                 }
             }
         }
 
-        protected void btnSaveCat_Click(object sender, EventArgs e)
+        protected void BtnSaveItem_Click(object sender, EventArgs e)
         {
             int subCatId = int.Parse(selectSubCat.SelectedValue);
             int result = newItem.InsertItem(itemName.Text, itemDescription.InnerText, subCatId);

@@ -13,22 +13,31 @@ namespace SalesManagementSystem {
     public partial class AddCategories {
         
         /// <summary>
-        /// catName control.
+        /// lblMessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox catName;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblMessage;
         
         /// <summary>
-        /// catDescription control.
+        /// txtCatName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea catDescription;
+        protected global::System.Web.UI.WebControls.TextBox txtCatName;
+        
+        /// <summary>
+        /// txtCatDescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea txtCatDescription;
         
         /// <summary>
         /// btnSaveCat control.
