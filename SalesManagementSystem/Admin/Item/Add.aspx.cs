@@ -13,6 +13,7 @@ namespace SalesManagementSystem
             {
                 if (Session["userName"] != null)
                 {
+                    lblName.InnerText = Session["userName"].ToString();
                     DataTable ds = newItem.LoadCat();
                     if (ds.Rows.Count > 0)
                     {

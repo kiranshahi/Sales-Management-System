@@ -28,5 +28,23 @@ namespace SalesManagementSystem.ItemDetails
             grdItemDetails.DataSource = dt;
             grdItemDetails.DataBind();
         }
+
+        protected void BtnSearch_Click(object sender, EventArgs e)
+        {
+            string searchTerm = searchInput.Value;
+            DataTable dt = itemDetailsObj.SearchItemDetails(searchTerm);
+            grdItemDetails.DataSource = dt;
+            grdItemDetails.DataBind();
+            if (dt.Rows.Count==0)
+            {
+                message.InnerText = "Result not found.";
+            }
+        }
+
+        protected void grdItemDetails_PageIndexChanging(object sender, System.Web.UI.WebControls.GridViewPageEventArgs e)
+        {
+            grdItemDetails.PageIndex = e.NewPageIndex;
+            LoadItems();
+        }
     }
 }

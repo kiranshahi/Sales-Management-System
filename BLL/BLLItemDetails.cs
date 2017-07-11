@@ -97,5 +97,26 @@ namespace BLL
                 }
             }
         }
+        public DataTable SearchItemDetails(string subCatName)
+        {
+            using (SqlConnection con = DatabaseConn.connection())
+            {
+                /***
+                 * Select all ItemCategoryID, catName and catDescription from ItemCategory Table.
+                 ***/
+                string query = "SearchItemDetails";
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@name", subCatName);
+                    using (SqlDataAdapter searchItemDetailsCommand = new SqlDataAdapter(cmd))
+                    {
+                        DataTable dt = new DataTable();
+                        searchItemDetailsCommand.Fill(dt);
+                        return dt;
+                    }
+                }
+            }
+        }
     }
 }

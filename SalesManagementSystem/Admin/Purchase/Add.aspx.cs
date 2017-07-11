@@ -16,7 +16,7 @@ namespace SalesManagementSystem
                     if (!IsPostBack)
                     {
 
-                        //lblName.InnerText = Session["userName"].ToString();
+                        lblName.InnerText = Session["userName"].ToString();
 
                         /** Set Item name and Item ID to Select option from Item Table **/
                         DataTable dt = newPurchase.LoadItem();

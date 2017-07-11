@@ -11,14 +11,15 @@
                 <div class="input-group">
                     <input id="searchInput" type="text" class="form-control" placeholder="Search for..." runat="server">
                     <span class="input-group-btn">
-                        <asp:Button runat="server" ID="btnSearch" CssClass="btn btn-default" Text="Go!"  />
+                        <asp:Button runat="server" ID="btnSearch" CssClass="btn btn-default" Text="Go!" OnClick="BtnSearch_Click"  />
                     </span>
                 </div>
             </div>
         </div>
     </div>
-    
-    <asp:GridView ID="grdItem" AutoGenerateColumns="False" runat="server" CssClass="table table-hover">
+    <a href="~/Admin/Item/Add" runat="server">Add New Item</a>
+    <label id="message" runat="server"></label>
+    <asp:GridView ID="grdItem" AutoGenerateColumns="False" runat="server" CssClass="table table-hover" AllowPaging="True" OnPageIndexChanging="grdItem_PageIndexChanging">
         <Columns>
             <asp:TemplateField HeaderText="Item Name">
                 <ItemTemplate>

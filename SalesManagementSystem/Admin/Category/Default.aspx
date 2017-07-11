@@ -4,7 +4,7 @@
     <span id="lblName" runat="server"></span>
 </asp:Content>
 <asp:Content ID="catList" ContentPlaceHolderID="body" runat="server">
-    
+
     <div class="row">
         <div class="col-lg-6">
             <div class="form-inline">
@@ -17,8 +17,8 @@
             </div>
         </div>
     </div>
-    
-    <asp:GridView ID="grdCategory" AutoGenerateColumns="False" runat="server" CssClass="table table-hover">
+    <label id="message" runat="server"></label>
+    <asp:GridView ID="grdCategory" AutoGenerateColumns="False" runat="server" CssClass="table table-hover" AllowPaging="True" OnPageIndexChanging="grdCategory_PageIndexChanging" OnRowDataBound="grdCategory_RowDataBound">
         <Columns>
             <asp:TemplateField HeaderText="Category Name">
                 <ItemTemplate>
@@ -37,7 +37,7 @@
                             <span class="glyphicon glyphicon-pencil"></span> Edit
                         </button>
                     </asp:HyperLink>
-                    <asp:HyperLink runat="server" ID="btnDelete"  NavigateUrl='<%# Eval("ItemCategoryID", "~/Admin/Category/Delete.aspx?Id={0}") %>'>
+                    <asp:HyperLink runat="server" ID="btnDelete" NavigateUrl='<%# Eval("ItemCategoryID", "~/Admin/Category/Delete.aspx?Id={0}") %>'>
                         <button type="button" class="btn btn-danger btn-sm">
                             <span class="glyphicon glyphicon-trash"></span>Delete
                         </button>

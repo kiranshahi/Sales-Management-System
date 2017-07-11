@@ -29,5 +29,23 @@ namespace SalesManagementSystem.Purchase
             grdPurchase.DataSource = dt;
             grdPurchase.DataBind();
         }
+
+        protected void BtnSearch_Click(object sender, EventArgs e)
+        {
+            string searchTerm = searchInput.Value;
+            DataTable dt = purchaseObj.SearchPurchase(searchTerm);
+            grdPurchase.DataSource = dt;
+            grdPurchase.DataBind();
+            if (dt.Rows.Count==0)
+            {
+                message.InnerText = "Result Not found"; 
+            }
+        }
+
+        protected void grdPurchase_PageIndexChanging(object sender, System.Web.UI.WebControls.GridViewPageEventArgs e)
+        {
+            grdPurchase.PageIndex = e.NewPageIndex;
+            LoadPurchase();
+        }
     }
 }

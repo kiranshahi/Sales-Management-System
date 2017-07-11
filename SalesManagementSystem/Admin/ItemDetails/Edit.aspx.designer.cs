@@ -13,6 +13,15 @@ namespace SalesManagementSystem.ItemDetails {
     public partial class Edit {
         
         /// <summary>
+        /// lblName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblName;
+        
+        /// <summary>
         /// lblMessage control.
         /// </summary>
         /// <remarks>

@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="Add Item Details" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Add.aspx.cs" Inherits="SalesManagementSystem.AddItemDetails" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<asp:Content ID="name" ContentPlaceHolderID="Name" runat="server">
+    <span id="lblName" runat="server"></span>
 </asp:Content>
 <asp:Content ID="AddIitemDetails" ContentPlaceHolderID="body" runat="server">
     <div class="panel panel-warning">
@@ -46,4 +47,5 @@
                 <asp:Button ID="btnSaveDetails" runat="server" Text="Save Item Details" CssClass="btn btn-success" OnClick="BtnSaveDetails_Click" />
             </div>
         </div>
+    </div>
 </asp:Content>

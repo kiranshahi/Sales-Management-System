@@ -17,6 +17,7 @@ namespace SalesManagementSystem.ItemDetails
             {
                 if (Session["userName"] != null)
                 {
+                    lblName.InnerText = Session["userName"].ToString();
                     if (String.IsNullOrWhiteSpace(Request.QueryString["id"]))
                     {
                         Response.Redirect("~/Admin/Category");

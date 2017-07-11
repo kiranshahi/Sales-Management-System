@@ -150,6 +150,7 @@
     <Content Include="Admin\ItemDetails\Add.aspx" />
     <Content Include="Admin\Purchase\Default.aspx" />
     <Content Include="Admin\Reset.aspx" />
+    <Content Include="Admin\Sales\Sale.aspx" />
     <Content Include="Admin\SubCat\Add.aspx" />
     <Content Include="Admin\SubCat\Default.aspx" />
     <Content Include="Admin\SubCat\Edit.aspx" />
@@ -261,6 +262,7 @@
     <Content Include="Content\bootstrap\badges.less" />
     <Content Include="Content\bootstrap\alerts.less" />
     <Content Include="images\default.jpg" />
+    <Content Include="images\jutta.jpg" />
     <Content Include="images\user.png" />
     <Content Include="Admin\Logout.aspx" />
     <Content Include="Scripts\jquery.searchabledropdown-1.0.8.min.js" />
@@ -446,6 +448,13 @@
     </Compile>
     <Compile Include="Admin\Reset.aspx.designer.cs">
       <DependentUpon>Reset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Sales\Sale.aspx.cs">
+      <DependentUpon>Sale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Sales\Sale.aspx.designer.cs">
+      <DependentUpon>Sale.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\SubCat\Add.aspx.cs">
       <DependentUpon>Add.aspx</DependentUpon>

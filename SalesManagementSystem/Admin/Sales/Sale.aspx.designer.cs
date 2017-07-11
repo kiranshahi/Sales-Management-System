@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SalesManagementSystem {
+namespace SalesManagementSystem.Sales {
     
     
-    public partial class AddPurchase {
+    public partial class Sale {
         
         /// <summary>
         /// lblName control.
@@ -20,15 +20,6 @@ namespace SalesManagementSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblName;
-        
-        /// <summary>
-        /// lblMessage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMessage;
         
         /// <summary>
         /// selectItem control.

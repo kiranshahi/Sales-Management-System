@@ -12,19 +12,17 @@ namespace SalesManagementSystem.Item
             {
                 if (Session["userName"] != null)
                 {
-                    if (!IsPostBack)
+                    lblName.InnerText = Session["userName"].ToString();
+                    if (String.IsNullOrWhiteSpace(Request.QueryString["id"]))
                     {
-                        if (String.IsNullOrWhiteSpace(Request.QueryString["id"]))
-                        {
-                            Response.Redirect("~/Admin/Category");
-                        }
-                        else
-                        {
-                            int id = int.Parse(Request.QueryString["id"]);
-                            BLLItem item = itemObj.GetItemById(id);
-                            lblItemName.Text = item.ItemName;
-                            success.Visible = false;
-                        }
+                        Response.Redirect("~/Admin/Category");
+                    }
+                    else
+                    {
+                        int id = int.Parse(Request.QueryString["id"]);
+                        BLLItem item = itemObj.GetItemById(id);
+                        lblItemName.Text = item.ItemName;
+                        success.Visible = false;
                     }
                 }
                 else

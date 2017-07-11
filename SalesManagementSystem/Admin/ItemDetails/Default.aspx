@@ -1,23 +1,24 @@
 ﻿<%@ Page Title="Stock List" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="SalesManagementSystem.ItemDetails.Default" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="Name" runat="server">
     <span id="lblName" runat="server"></span>
 </asp:Content>
 <asp:Content ID="catList" ContentPlaceHolderID="body" runat="server">
-    
+
     <div class="row">
         <div class="col-lg-6">
             <div class="form-inline">
                 <div class="input-group">
                     <input id="searchInput" type="text" class="form-control" placeholder="Search for..." runat="server">
                     <span class="input-group-btn">
-                        <asp:Button runat="server" ID="btnSearch" CssClass="btn btn-default" Text="Go!" />
+                        <asp:Button runat="server" ID="btnSearch" CssClass="btn btn-default" Text="Go!" OnClick="BtnSearch_Click" />
                     </span>
                 </div>
             </div>
         </div>
     </div>
-    
-    <asp:GridView ID="grdItemDetails" AutoGenerateColumns="False" runat="server" CssClass="table table-hover">
+    <label id="message" runat="server"></label>
+    <asp:GridView ID="grdItemDetails" AutoGenerateColumns="False" runat="server" CssClass="table table-hover" AllowPaging="True" OnPageIndexChanging="grdItemDetails_PageIndexChanging">
         <Columns>
             <asp:TemplateField HeaderText="Item Name">
                 <ItemTemplate>
@@ -44,6 +45,13 @@
                     <asp:Label ID="lblItemWeight" runat="server" Text='<%#Eval("Quantity") %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
+            <asp:TemplateField HeaderText="Image">
+                <ItemTemplate>
+                    <div class="thumbnail img-circle">
+                        <asp:Image ID="ImageButton1" runat="server" CssClass="media-object" ImageUrl='<%#"~/images/"+Eval("Image") %>' />
+                    </div>
+                </ItemTemplate>
+            </asp:TemplateField>
             <asp:TemplateField HeaderText="Action">
                 <ItemTemplate>
                     <asp:HyperLink runat="server" NavigateUrl='<%# Eval("ItemDetailsID", "~/Admin/ItemDetails/Edit.aspx?Id={0}") %>'>
@@ -51,7 +59,7 @@
                             <span class="glyphicon glyphicon-pencil"></span> Edit
                         </button>
                     </asp:HyperLink>
-                    <asp:HyperLink runat="server" ID="btnDelete"  NavigateUrl='<%# Eval("ItemDetailsID", "~/Admin/ItemDetails/Delete.aspx?Id={0}") %>'>
+                    <asp:HyperLink runat="server" ID="btnDelete" NavigateUrl='<%# Eval("ItemDetailsID", "~/Admin/ItemDetails/Delete.aspx?Id={0}") %>'>
                         <button type="button" class="btn btn-danger btn-sm">
                             <span class="glyphicon glyphicon-trash"></span>Delete
                         </button>

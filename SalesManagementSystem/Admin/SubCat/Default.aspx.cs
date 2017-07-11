@@ -25,8 +25,26 @@ namespace SalesManagementSystem.SubCat
         protected void LoadSubCat()
         {
             DataTable dt = subCatObj.SelectSubCategories();
-            grdCategory.DataSource = dt;
-            grdCategory.DataBind();
+            grdSubCategory.DataSource = dt;
+            grdSubCategory.DataBind();
+        }
+
+        protected void BtnSearch_Click(object sender, EventArgs e)
+        {
+            string searchTerm = searchInput.Value;
+            DataTable dt = subCatObj.SearchSubCategories(searchTerm);
+            grdSubCategory.DataSource = dt;
+            grdSubCategory.DataBind();
+            if (dt.Rows.Count == 0)
+            {
+                message.InnerText = "Result not found.";
+            }
+        }
+
+        protected void grdSubCategory_PageIndexChanging(object sender, System.Web.UI.WebControls.GridViewPageEventArgs e)
+        {
+            grdSubCategory.PageIndex = e.NewPageIndex;
+            LoadSubCat();
         }
     }
 }

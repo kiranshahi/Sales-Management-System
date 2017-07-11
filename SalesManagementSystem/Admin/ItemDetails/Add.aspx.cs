@@ -13,6 +13,7 @@ namespace SalesManagementSystem
             {
                 if (Session["userName"] != null)
                 {
+                    lblName.InnerText = Session["userName"].ToString();
                     /** Set Item name and Item ID to Select option from Item Table **/
                     DataTable dt = newItemDetails.LoadItemName();
 

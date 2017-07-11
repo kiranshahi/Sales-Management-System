@@ -28,7 +28,11 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a runat="server" href="~/">Home</a></li>
+                    <li><a runat="server" href="~/Admin/Category">Category</a></li>
+                    <li><a runat="server" href="~/Admin/SubCat">Sub Category</a></li>
+                    <li><a runat="server" href="~/Admin/Item">Item</a></li>
+                    <li><a runat="server" href="~/Admin/ItemDetails">Item Details</a></li>
+                    <li><a runat="server" href="~/Admin/Purchase">Purchase</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="">

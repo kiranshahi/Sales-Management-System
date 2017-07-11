@@ -1,6 +1,8 @@
 ﻿using BLL;
 using System;
 using System.Data;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 
 namespace SalesManagementSystem.Category
 {
@@ -36,6 +38,16 @@ namespace SalesManagementSystem.Category
             DataTable dt = catObj.SearchCategories(searchTerm);
             grdCategory.DataSource = dt;
             grdCategory.DataBind();
+            if (dt.Rows.Count == 0)
+            {
+                message.InnerText = "Result Not found";
+            }
+        }
+
+        protected void grdCategory_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            grdCategory.PageIndex = e.NewPageIndex;
+            LoadCat();
         }
     }
 }

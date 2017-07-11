@@ -86,3 +86,8 @@ textarea {
 .form-inline .input-group {
     margin-bottom: 20px;
 }
+
+.img-circle {
+    height: 90px;
+    width: 90px;
+}

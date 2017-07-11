@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="Edit Item Details" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Edit.aspx.cs" Inherits="SalesManagementSystem.ItemDetails.Edit" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<asp:Content ID="name" ContentPlaceHolderID="Name" runat="server">
+    <span id="lblName" runat="server"></span>
 </asp:Content>
 
 <asp:Content ID="AddIitemDetails" ContentPlaceHolderID="body" runat="server">
