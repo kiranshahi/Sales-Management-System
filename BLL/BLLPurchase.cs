@@ -102,5 +102,19 @@ namespace BLL
                 }
             }
         }
+        public DataTable SelectPurchase()
+        {
+            using (SqlConnection con = DatabaseConn.connection())
+            {
+                /***
+                 * Select all ItemCategoryID, catName and catDescription from ItemCategory Table.
+                 ***/
+                string query = "selectPurchase";
+                SqlDataAdapter getItemCommand = new SqlDataAdapter(query, con);
+                DataTable dt = new DataTable();
+                getItemCommand.Fill(dt);
+                return dt;
+            }
+        }
     }
 }

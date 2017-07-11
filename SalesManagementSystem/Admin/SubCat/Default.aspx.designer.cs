@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SalesManagementSystem {
+namespace SalesManagementSystem.SubCat {
     
     
-    public partial class AddSubCat {
+    public partial class Default {
         
         /// <summary>
         /// lblName control.
@@ -22,39 +22,30 @@ namespace SalesManagementSystem {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblName;
         
         /// <summary>
-        /// subCatName control.
+        /// searchInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox subCatName;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText searchInput;
         
         /// <summary>
-        /// selectCat control.
+        /// btnSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList selectCat;
+        protected global::System.Web.UI.WebControls.Button btnSearch;
         
         /// <summary>
-        /// subCatDescription control.
+        /// grdCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea subCatDescription;
-        
-        /// <summary>
-        /// btnSaveSubCat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSaveSubCat;
+        protected global::System.Web.UI.WebControls.GridView grdCategory;
     }
 }

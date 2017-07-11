@@ -24,7 +24,7 @@ namespace BLL
             getItemCommand.Fill(dt);
             return dt;
         }
-        public int InsertItemDetails(int selectItem, string itemColor, string itemSize, string itemWeight, double sellingPrice)
+        public int InsertItemDetails(int selectItem, string itemColor, string itemSize, string itemWeight, double sellingPrice, string fileName)
         {
             /**
              * Insert into ItemDetails table.
@@ -41,6 +41,7 @@ namespace BLL
                 cmd.Parameters.AddWithValue("@itemSize", itemSize);
                 cmd.Parameters.AddWithValue("@itemWeight", itemWeight);
                 cmd.Parameters.AddWithValue("@itemSellingPrice", sellingPrice);
+                cmd.Parameters.AddWithValue("@imageFile", fileName);
                 return cmd.ExecuteNonQuery();
             }
         }

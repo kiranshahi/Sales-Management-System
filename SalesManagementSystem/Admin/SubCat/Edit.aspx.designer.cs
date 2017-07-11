@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SalesManagementSystem {
+namespace SalesManagementSystem.SubCat {
     
     
-    public partial class AddSubCat {
+    public partial class Edit {
         
         /// <summary>
         /// lblName control.
@@ -20,6 +20,15 @@ namespace SalesManagementSystem {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblName;
+        
+        /// <summary>
+        /// lblMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMessage;
         
         /// <summary>
         /// subCatName control.
@@ -49,12 +58,12 @@ namespace SalesManagementSystem {
         protected global::System.Web.UI.HtmlControls.HtmlTextArea subCatDescription;
         
         /// <summary>
-        /// btnSaveSubCat control.
+        /// btnUpdateSubCat control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSaveSubCat;
+        protected global::System.Web.UI.WebControls.Button btnUpdateSubCat;
     }
 }

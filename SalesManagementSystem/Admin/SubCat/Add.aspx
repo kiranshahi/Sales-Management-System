@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="Add Sub Categories" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Add.aspx.cs" Inherits="SalesManagementSystem.AddSubCat" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="Name" runat="server">
+    <span id="lblName" runat="server"></span>
 </asp:Content>
-<asp:Content ID="AddSubCat" ContentPlaceHolderID="main" runat="server">
+<asp:Content ID="AddSubCat" ContentPlaceHolderID="body" runat="server">
         
         <div class="form-group"> 
             <label for="subCatName">Sub Category Name:</label>

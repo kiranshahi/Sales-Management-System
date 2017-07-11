@@ -11,14 +11,28 @@ namespace SalesManagementSystem
         {
             if (!IsPostBack)
             {
-                /** Set Item name and Item ID to Select option from Item Table **/
-                DataTable dt = newPurchase.LoadItem();
+                if (Session["userName"] != null)
+                {
+                    if (!IsPostBack)
+                    {
 
-                selectItem.DataSource = dt;
-                selectItem.DataTextField = "ItemName";
-                selectItem.DataValueField = "ItemID";
-                selectItem.DataBind();
-                selectItem.Items.Insert(0, "Select Item");
+                        //lblName.InnerText = Session["userName"].ToString();
+
+                        /** Set Item name and Item ID to Select option from Item Table **/
+                        DataTable dt = newPurchase.LoadItem();
+
+                        selectItem.DataSource = dt;
+                        selectItem.DataTextField = "ItemName";
+                        selectItem.DataValueField = "ItemID";
+                        selectItem.DataBind();
+                        selectItem.Items.Insert(0, "Select Item");
+                    }
+                }
+                else
+                {
+                    Response.Redirect("~/Admin/Default");
+                }
+                
             }
         }
 

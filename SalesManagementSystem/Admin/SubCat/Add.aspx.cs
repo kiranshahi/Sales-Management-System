@@ -11,12 +11,20 @@ namespace SalesManagementSystem
         {
             if (!IsPostBack)
             {
-                /** Set Item Category name and Item Category ID to Select option from Itemcategory Table **/
-                DataTable dt = newSubCategory.LoadCatName();
-                selectCat.DataSource = dt;
-                selectCat.DataTextField = "CatName";
-                selectCat.DataValueField = "ItemCategoryID";
-                selectCat.DataBind();
+                if (Session["userName"] != null)
+                {
+                    /** Set Item Category name and Item Category ID to Select option from Itemcategory Table **/
+                    DataTable dt = newSubCategory.LoadCatName();
+                    selectCat.DataSource = dt;
+                    selectCat.DataTextField = "CatName";
+                    selectCat.DataValueField = "ItemCategoryID";
+                    selectCat.DataBind();
+                }
+                else
+                {
+                    Response.Redirect("~/Admin/Default");
+                }
+                
             }
         }
 

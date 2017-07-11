@@ -7,10 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SalesManagementSystem {
+namespace SalesManagementSystem.ItemDetails {
     
     
-    public partial class AddItemDetails {
+    public partial class Details {
+        
+        /// <summary>
+        /// lblName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblName;
         
         /// <summary>
         /// lblMessage control.
@@ -22,13 +31,13 @@ namespace SalesManagementSystem {
         protected global::System.Web.UI.WebControls.Label lblMessage;
         
         /// <summary>
-        /// selectItem control.
+        /// itemName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList selectItem;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl itemName;
         
         /// <summary>
         /// itemColor control.
@@ -37,7 +46,7 @@ namespace SalesManagementSystem {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox itemColor;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl itemColor;
         
         /// <summary>
         /// itemSize control.
@@ -46,7 +55,7 @@ namespace SalesManagementSystem {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox itemSize;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl itemSize;
         
         /// <summary>
         /// itemWeight control.
@@ -55,33 +64,51 @@ namespace SalesManagementSystem {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox itemWeight;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl itemWeight;
         
         /// <summary>
-        /// sellingPrice control.
+        /// itemSellingPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox sellingPrice;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl itemSellingPrice;
         
         /// <summary>
-        /// uploadImage control.
+        /// itemQuantity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload uploadImage;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl itemQuantity;
         
         /// <summary>
-        /// btnSaveDetails control.
+        /// itemDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSaveDetails;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl itemDescription;
+        
+        /// <summary>
+        /// itemSubCategoryName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl itemSubCategoryName;
+        
+        /// <summary>
+        /// itemCatName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl itemCatName;
     }
 }

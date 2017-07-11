@@ -1,5 +1,4 @@
-﻿<%@ Page Title="Category List" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="SalesManagementSystem.Category.Default" %>
-
+﻿<%@ Page Title="Sub Category List" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="SalesManagementSystem.SubCat.Default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Name" runat="server">
     <span id="lblName" runat="server"></span>
 </asp:Content>
@@ -11,7 +10,7 @@
                 <div class="input-group">
                     <input id="searchInput" type="text" class="form-control" placeholder="Search for..." runat="server">
                     <span class="input-group-btn">
-                        <asp:Button runat="server" ID="btnSearch" CssClass="btn btn-default" Text="Go!" OnClick="BtnSearch_Click" />
+                        <asp:Button runat="server" ID="btnSearch" CssClass="btn btn-default" Text="Go!"/>
                     </span>
                 </div>
             </div>
@@ -22,27 +21,32 @@
         <Columns>
             <asp:TemplateField HeaderText="Category Name">
                 <ItemTemplate>
-                    <asp:Label ID="lblCatName" runat="server" Text='<%#Eval("CatName") %>'></asp:Label>
+                    <asp:Label ID="lblCatName" runat="server" Text='<%#Eval("SubCategoryName") %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Category Description">
                 <ItemTemplate>
-                    <asp:Label ID="lblCatDescription" runat="server" Text='<%#Eval("CatDescription") %>'></asp:Label>
+                    <asp:Label ID="lblCatDescription" runat="server" Text='<%#Eval("SubCatDescription") %>'></asp:Label>
+                </ItemTemplate>
+            </asp:TemplateField>
+            <asp:TemplateField HeaderText="Category Description">
+                <ItemTemplate>
+                    <asp:Label ID="lblCatDescription" runat="server" Text='<%#Eval("CatName") %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Action">
                 <ItemTemplate>
-                    <asp:HyperLink runat="server" NavigateUrl='<%# Eval("ItemCategoryID", "~/Admin/Category/Edit.aspx?Id={0}") %>'>
+                    <asp:HyperLink runat="server" NavigateUrl='<%# Eval("ItemSubCategoryID", "~/Admin/SubCat/Edit.aspx?Id={0}") %>'>
                         <button type="button" class="btn btn-success btn-sm">
                             <span class="glyphicon glyphicon-pencil"></span> Edit
                         </button>
                     </asp:HyperLink>
-                    <asp:HyperLink runat="server" ID="btnDelete"  NavigateUrl='<%# Eval("ItemCategoryID", "~/Admin/Category/Delete.aspx?Id={0}") %>'>
+                    <asp:HyperLink runat="server" ID="btnDelete"  NavigateUrl='<%# Eval("ItemSubCategoryID", "~/Admin/SubCat/Delete.aspx?Id={0}") %>'>
                         <button type="button" class="btn btn-danger btn-sm">
                             <span class="glyphicon glyphicon-trash"></span>Delete
                         </button>
                     </asp:HyperLink>
-                    <asp:HyperLink runat="server" NavigateUrl='<%# Eval("ItemCategoryID", "~/Admin/Category/Details.aspx?Id={0}") %>'>
+                    <asp:HyperLink runat="server" NavigateUrl='<%# Eval("ItemSubCategoryID", "~/Admin/SubCat/Details.aspx?Id={0}") %>'>
                         <button type="button" class="btn btn-info btn-sm">
                             <span class="glyphicon glyphicon-eye-open"></span> Details
                         </button>

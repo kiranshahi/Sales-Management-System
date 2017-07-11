@@ -36,7 +36,7 @@ namespace BLL
                 /***
                  * Select ItemCategoryID, catName and catDescription from ItemCategory Table.
                  ***/
-                string query = "SELECT * FROM ItemCategory";
+                string query = "SELECT * FROM ItemCategory WHERE IsDeleted = 'False'";
                 SqlDataAdapter getCatCommand = new SqlDataAdapter(query, con);
                 DataTable ds = new DataTable();
                 getCatCommand.Fill(ds);

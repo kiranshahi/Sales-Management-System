@@ -137,6 +137,7 @@
     <Content Include="Admin\Category\Details.aspx" />
     <Content Include="Admin\Category\Edit.aspx" />
     <Content Include="Admin\ItemDetails\Default.aspx" />
+    <Content Include="Admin\ItemDetails\Details.aspx" />
     <Content Include="Admin\ItemDetails\Edit.aspx" />
     <Content Include="Admin\Item\Default.aspx" />
     <Content Include="Admin\Item\Delete.aspx" />
@@ -150,6 +151,8 @@
     <Content Include="Admin\Purchase\Default.aspx" />
     <Content Include="Admin\Reset.aspx" />
     <Content Include="Admin\SubCat\Add.aspx" />
+    <Content Include="Admin\SubCat\Default.aspx" />
+    <Content Include="Admin\SubCat\Edit.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-datetimepicker.css" />
     <Content Include="Content\bootstrap-datetimepicker.min.css" />
@@ -257,6 +260,7 @@
     <Content Include="Content\bootstrap\bootstrap.less" />
     <Content Include="Content\bootstrap\badges.less" />
     <Content Include="Content\bootstrap\alerts.less" />
+    <Content Include="images\default.jpg" />
     <Content Include="images\user.png" />
     <Content Include="Admin\Logout.aspx" />
     <Content Include="Scripts\jquery.searchabledropdown-1.0.8.min.js" />
@@ -344,6 +348,13 @@
     </Compile>
     <Compile Include="Admin\ItemDetails\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ItemDetails\Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ItemDetails\Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\ItemDetails\Edit.aspx.cs">
       <DependentUpon>Edit.aspx</DependentUpon>
@@ -442,6 +453,20 @@
     </Compile>
     <Compile Include="Admin\SubCat\Add.aspx.designer.cs">
       <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SubCat\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SubCat\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SubCat\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SubCat\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
