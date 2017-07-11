@@ -67,6 +67,15 @@ namespace SalesManagementSystem {
         protected global::System.Web.UI.WebControls.TextBox itemWeight;
         
         /// <summary>
+        /// valSellingPrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator valSellingPrice;
+        
+        /// <summary>
         /// sellingPrice control.
         /// </summary>
         /// <remarks>

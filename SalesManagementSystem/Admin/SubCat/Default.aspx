@@ -16,6 +16,7 @@
             </div>
         </div>
     </div>
+    <a href="~/Admin/SubCat/Add" runat="server">Add New Sub Category</a>
     <label id="message" runat="server"></label>
     <asp:GridView ID="grdSubCategory" AutoGenerateColumns="False" runat="server" CssClass="table table-hover" AllowPaging="True" OnPageIndexChanging="grdSubCategory_PageIndexChanging">
         <Columns>
@@ -41,7 +42,7 @@
                             <span class="glyphicon glyphicon-pencil"></span> Edit
                         </button>
                     </asp:HyperLink>
-                    <asp:HyperLink runat="server" ID="btnDelete"  NavigateUrl='<%# Eval("ItemSubCategoryID", "~/Admin/SubCat/Delete.aspx?Id={0}") %>'>
+                    <%--<asp:HyperLink runat="server" ID="btnDelete"  NavigateUrl='<%# Eval("ItemSubCategoryID", "~/Admin/SubCat/Delete.aspx?Id={0}") %>'>
                         <button type="button" class="btn btn-danger btn-sm">
                             <span class="glyphicon glyphicon-trash"></span>Delete
                         </button>
@@ -50,7 +51,7 @@
                         <button type="button" class="btn btn-info btn-sm">
                             <span class="glyphicon glyphicon-eye-open"></span> Details
                         </button>
-                    </asp:HyperLink>
+                    </asp:HyperLink>--%>
                 </ItemTemplate>
             </asp:TemplateField>
         </Columns>

@@ -3,7 +3,7 @@
     <span id="lblName" runat="server"></span>
 </asp:Content>
 <asp:Content ID="AddSubCat" ContentPlaceHolderID="body" runat="server">
-        
+        <label id="message" runat="server"></label>
         <div class="form-group"> 
             <label for="subCatName">Sub Category Name:</label>
             <asp:TextBox ID="subCatName" runat="server" CssClass="form-control" required></asp:TextBox>

@@ -33,10 +33,23 @@ namespace SalesManagementSystem
         protected void BtnSaveItem_Click(object sender, EventArgs e)
         {
             int subCatId = int.Parse(selectSubCat.SelectedValue);
-            int result = newItem.InsertItem(itemName.Text, itemDescription.InnerText, subCatId);
-            if (result >0)
+            if (!newItem.CheckItem(itemName.Text))
             {
-                // Some message
+                int result = newItem.InsertItem(itemName.Text, itemDescription.InnerText, subCatId);
+                if (result > 0)
+                {
+                    lblMessage.Text = "Item added success fully.";
+                    itemName.Text = String.Empty;
+                    itemDescription.InnerText = String.Empty;
+                }
+                else
+                {
+                    lblMessage.Text = "Something went wrong.";
+                }
+            }
+            else
+            {
+                lblMessage.Text = "This item already exist.";
             }
         }
     }

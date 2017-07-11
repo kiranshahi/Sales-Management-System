@@ -116,5 +116,28 @@ namespace BLL
                 }
             }
         }
+
+        public bool CheckCat(string catName)
+        {
+            using (SqlConnection con = DatabaseConn.connection())
+            {
+                bool isCatExist = false;
+                string checkQuery = "SELECT * FROM ItemCategory WHERE CatName = @catName";
+                using (SqlCommand cmd = new SqlCommand(checkQuery, con))
+                {
+                    cmd.Parameters.AddWithValue("@catName", catName);
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        if (dr.HasRows)
+                        {
+                            isCatExist = true;
+                            break;
+                        }
+                    }
+                    return isCatExist;
+                }
+            }
+        }
     }
 }

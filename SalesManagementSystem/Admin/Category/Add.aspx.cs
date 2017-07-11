@@ -23,15 +23,27 @@ namespace SalesManagementSystem
             if (String.IsNullOrWhiteSpace(txtCatName.Text))
             {
                 lblMessage.InnerText = "Category Name cannot be empty";
-            } else
+            }
+            else
             {
-                int i = bllCat.AddCategory(txtCatName.Text, txtCatDescription.InnerText);
-                if (i > 0)
+                if (!bllCat.CheckCat(txtCatName.Text))
                 {
-                    lblMessage.InnerText = "Category added successfully.";
-                    txtCatName.Text = String.Empty;
-                    txtCatDescription.InnerText = String.Empty;
+                    int i = bllCat.AddCategory(txtCatName.Text, txtCatDescription.InnerText);
+                    if (i > 0)
+                    {
+                        lblMessage.InnerText = "Category added successfully.";
+                        txtCatName.Text = String.Empty;
+                        txtCatDescription.InnerText = String.Empty;
 
+                    }
+                    else
+                    {
+                        lblMessage.InnerText = "Something went wrong";
+                    }
+                }
+                else
+                {
+                    lblMessage.InnerText = "Category with Name " + txtCatName.Text + ", already exist.";
                 }
             }
         }

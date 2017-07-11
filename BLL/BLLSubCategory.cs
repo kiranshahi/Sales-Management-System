@@ -119,5 +119,27 @@ namespace BLL
                 }
             }
         }
+        public bool CheckSubCat(string subCatName)
+        {
+            using (SqlConnection con = DatabaseConn.connection())
+            {
+                bool isSubCatExist = false;
+                string checkQuery = "SELECT * FROM ItemSubCategory WHERE SubCategoryName = @subCatName";
+                using (SqlCommand cmd = new SqlCommand(checkQuery, con))
+                {
+                    cmd.Parameters.AddWithValue("@subCatName", subCatName);
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        if (dr.HasRows)
+                        {
+                            isSubCatExist = true;
+                            break;
+                        }
+                    }
+                    return isSubCatExist;
+                }
+            }
+        }
     }
 }

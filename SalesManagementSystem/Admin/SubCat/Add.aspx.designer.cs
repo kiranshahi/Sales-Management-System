@@ -22,6 +22,15 @@ namespace SalesManagementSystem {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblName;
         
         /// <summary>
+        /// message control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl message;
+        
+        /// <summary>
         /// subCatName control.
         /// </summary>
         /// <remarks>

@@ -41,15 +41,15 @@
             </div>
 
             <div class="form-group row">
-                <label for="purchasedQuantity" class="col-sm-2">Quantity:</label>
-                <div class="col-sm-8">
+                <label for="purchasedQuantity" class="col-sm-2">Quantity:</label><asp:RegularExpressionValidator ID="QuantityValidator" runat="server" ControlToValidate="txtPurchasedQuantity" ErrorMessage="Quantity must be numeric." ValidationExpression="\d+"></asp:RegularExpressionValidator>
+                &nbsp;<div class="col-sm-8">
                     <asp:TextBox ID="txtPurchasedQuantity" runat="server" CssClass="form-control"></asp:TextBox>
                 </div>
             </div>
 
             <div class="form-group row">
-                <label for="costPrice" class="col-sm-2">Cost Price</label>
-                <div class="col-sm-8">
+                <label for="costPrice" class="col-sm-2">Cost Price</label><asp:RegularExpressionValidator ID="CostPriceValidator" runat="server" ControlToValidate="txtCostPrice" ErrorMessage="Cost price must be numeric." ValidationExpression="^[0-9]\d{0,9}(\.\d{1,3})?%?$"></asp:RegularExpressionValidator>
+                &nbsp;<div class="col-sm-8">
                     <asp:TextBox ID="txtCostPrice" runat="server" CssClass="form-control"></asp:TextBox>
                 </div>
             </div>

@@ -17,6 +17,7 @@
             </div>
         </div>
     </div>
+    <a href="~/Admin/ItemDetails/Add" runat="server">Add New Item Details</a>
     <label id="message" runat="server"></label>
     <asp:GridView ID="grdItemDetails" AutoGenerateColumns="False" runat="server" CssClass="table table-hover" AllowPaging="True" OnPageIndexChanging="grdItemDetails_PageIndexChanging">
         <Columns>

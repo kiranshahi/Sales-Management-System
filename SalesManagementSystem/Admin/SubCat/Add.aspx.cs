@@ -32,7 +32,22 @@ namespace SalesManagementSystem
         protected void btnSaveSubCat_Click(object sender, EventArgs e)
         {
             int catId = Convert.ToInt32(selectCat.SelectedValue);
-            int insertResult  = newSubCategory.InsertSubCategory(subCatName.Text, catId, subCatDescription.InnerText);
+            if (!newSubCategory.CheckSubCat(subCatName.Text))
+            {
+                int insertResult = newSubCategory.InsertSubCategory(subCatName.Text, catId, subCatDescription.InnerText);
+                if (insertResult>0)
+                {
+                    message.InnerText = "Sub category added successfully.";
+                }
+                else
+                {
+                    message.InnerText = "Some thing went wrong.";
+                }
+            }
+            else
+            {
+                message.InnerText = "Sub category already exist.";
+            }
         }
     }
 }

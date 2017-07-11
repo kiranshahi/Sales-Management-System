@@ -1,6 +1,7 @@
 ﻿using BLL;
 using System;
 using System.Data;
+using System.IO;
 
 namespace SalesManagementSystem
 {
@@ -31,18 +32,23 @@ namespace SalesManagementSystem
 
         protected void BtnSaveDetails_Click(object sender, EventArgs e)
         {
-            string fileName = "default.jpg.";
-            if (uploadImage.HasFile)
+            string fileName = uploadImage.HasFile ? fileName = uploadImage.FileName.ToString() : "default.jpg.";
+
+            string ext = Path.GetExtension(fileName).ToLower();
+            if (ext== ".jpg" || ext == ".png")
             {
-                fileName = uploadImage.FileName.ToString();
                 uploadImage.PostedFile.SaveAs(Server.MapPath("~/images/") + fileName);
+                int itemId = Convert.ToInt32(selectItem.SelectedValue);
+                double salesPrice = Convert.ToDouble(sellingPrice.Text);
+                int insertResult = newItemDetails.InsertItemDetails(itemId, itemColor.Text, itemSize.Text, itemWeight.Text, salesPrice, fileName);
+                if (insertResult > 0)
+                {
+                    lblMessage.Text = "Item added successfull.";
+                }
             }
-            int itemId = Convert.ToInt32(selectItem.SelectedValue);
-            double salesPrice = Convert.ToDouble(sellingPrice.Text);
-            int insertResult = newItemDetails.InsertItemDetails(itemId, itemColor.Text, itemSize.Text, itemWeight.Text, salesPrice, fileName);
-            if (insertResult > 0)
+            else
             {
-                lblMessage.Text = "Item added successfull.";
+                lblMessage.Text = "Wrong image fromat.";
             }
         }
     }

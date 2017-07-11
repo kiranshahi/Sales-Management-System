@@ -139,5 +139,27 @@ namespace BLL
                 }
             }
         }
+        public bool CheckItem(string itemName)
+        {
+            using (SqlConnection con = DatabaseConn.connection())
+            {
+                bool isItemExist = false;
+                string checkQuery = "SELECT * FROM Item WHERE ItemName = @itemName";
+                using (SqlCommand cmd = new SqlCommand(checkQuery, con))
+                {
+                    cmd.Parameters.AddWithValue("@itemName", itemName);
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        if (dr.HasRows)
+                        {
+                            isItemExist = true;
+                            break;
+                        }
+                    }
+                    return isItemExist;
+                }
+            }
+        }
     }
 }

@@ -16,6 +16,7 @@
             </div>
         </div>
     </div>
+    <a href="~/Admin/Purchase/Add" runat="server">Add New Purchase</a>
     <label id="message" runat="server"></label>
     <asp:GridView ID="grdPurchase" AutoGenerateColumns="False" runat="server" CssClass="table table-hover" AllowPaging="True" OnPageIndexChanging="grdPurchase_PageIndexChanging">
         <Columns>

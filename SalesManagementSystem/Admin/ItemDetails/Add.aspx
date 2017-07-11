@@ -34,6 +34,7 @@
 
             <div class="form-group">
                 <label for="sellingPrice">Selling Price:</label>
+                <asp:RegularExpressionValidator ID="valSellingPrice" runat="server" ControlToValidate="sellingPrice" ErrorMessage="Selling Price must be numeric." ValidationExpression="^[0-9]\d{0,9}(\.\d{1,3})?%?$"></asp:RegularExpressionValidator>
                 <asp:TextBox ID="sellingPrice" runat="server" CssClass="form-control" required></asp:TextBox>
             </div>
 

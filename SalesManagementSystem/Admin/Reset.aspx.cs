@@ -24,6 +24,7 @@ namespace SalesManagementSystem
             string email = txtEmail.Value;
             if (String.IsNullOrWhiteSpace(email))
             {
+                login_error.Visible = true;
                 lblErrorMessage.InnerText = "Email cannot be empty.";
             }
             else
@@ -32,6 +33,7 @@ namespace SalesManagementSystem
                 if (isEmailExisted)
                 {
                     loginObj.sendEmail(email);
+                    login_error.Visible = true;
                     lblErrorMessage.InnerText = "Password sent successfully.";
                 }
                 else

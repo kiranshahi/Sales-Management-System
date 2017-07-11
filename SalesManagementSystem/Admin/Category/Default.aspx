@@ -17,8 +17,9 @@
             </div>
         </div>
     </div>
+    <a href="~/Admin/Category/Add" runat="server">Add New Category</a>
     <label id="message" runat="server"></label>
-    <asp:GridView ID="grdCategory" AutoGenerateColumns="False" runat="server" CssClass="table table-hover" AllowPaging="True" OnPageIndexChanging="grdCategory_PageIndexChanging" OnRowDataBound="grdCategory_RowDataBound">
+    <asp:GridView ID="grdCategory" AutoGenerateColumns="False" runat="server" CssClass="table table-hover" AllowPaging="True" OnPageIndexChanging="grdCategory_PageIndexChanging">
         <Columns>
             <asp:TemplateField HeaderText="Category Name">
                 <ItemTemplate>
