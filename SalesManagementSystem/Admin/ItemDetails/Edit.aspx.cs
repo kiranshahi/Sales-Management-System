@@ -1,6 +1,5 @@
 ﻿using BLL;
 using System;
-using System.Linq;
 
 namespace SalesManagementSystem.ItemDetails
 {

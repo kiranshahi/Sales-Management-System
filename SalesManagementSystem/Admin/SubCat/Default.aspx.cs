@@ -24,17 +24,17 @@ namespace SalesManagementSystem.SubCat
         }
         protected void LoadSubCat()
         {
-            DataTable dt = subCatObj.SelectSubCategories();
-            grdSubCategory.DataSource = dt;
-            grdSubCategory.DataBind();
+            //DataTable dt = subCatObj.SelectSubCategories();
+            //grdSubCategory.DataSource = dt;
+            //grdSubCategory.DataBind();
         }
 
         protected void BtnSearch_Click(object sender, EventArgs e)
         {
             string searchTerm = searchInput.Value;
             DataTable dt = subCatObj.SearchSubCategories(searchTerm);
-            grdSubCategory.DataSource = dt;
-            grdSubCategory.DataBind();
+            //grdSubCategory.DataSource = dt;
+            //grdSubCategory.DataBind();
             if (dt.Rows.Count == 0)
             {
                 message.InnerText = "Result not found.";
@@ -43,7 +43,7 @@ namespace SalesManagementSystem.SubCat
 
         protected void grdSubCategory_PageIndexChanging(object sender, System.Web.UI.WebControls.GridViewPageEventArgs e)
         {
-            grdSubCategory.PageIndex = e.NewPageIndex;
+            //grdSubCategory.PageIndex = e.NewPageIndex;
             LoadSubCat();
         }
     }

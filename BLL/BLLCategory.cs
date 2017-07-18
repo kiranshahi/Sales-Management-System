@@ -7,6 +7,7 @@ namespace BLL
 {
     public class BLLCategory
     {
+        public int CategoryID { get; set; }
         public string CatName { get; set; }
         public string CatDescription { get; set; }
 

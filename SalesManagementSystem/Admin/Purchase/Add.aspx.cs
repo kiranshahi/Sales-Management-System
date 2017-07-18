@@ -32,13 +32,13 @@ namespace SalesManagementSystem
                 {
                     Response.Redirect("~/Admin/Default");
                 }
-                
+
             }
         }
 
         protected void SelectItem_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (selectItem.SelectedIndex>0)
+            if (selectItem.SelectedIndex > 0)
             {
                 int itemId = int.Parse(selectItem.SelectedValue);
                 /** Set Item name and Item ID to Select option from Item Table **/
@@ -83,7 +83,7 @@ namespace SalesManagementSystem
             DateTime purchasedDate = DateTime.Parse(txtPurchasedDate.Text);
             int purchasedQuantity = Convert.ToInt32(txtPurchasedQuantity.Text);
             decimal costPrice = Convert.ToDecimal(txtCostPrice.Text);
-            int insertResult =  newPurchase.InsertItemSubCat(itemDetailsId, txtPurchasedFrom.Text, purchasedQuantity, costPrice, purchasedDate);
+            int insertResult = newPurchase.InsertItemSubCat(itemDetailsId, txtPurchasedFrom.Text, purchasedQuantity, costPrice, purchasedDate);
             int updateResult = newPurchase.UpdateQuantity(itemDetailsId, purchasedQuantity);
         }
     }

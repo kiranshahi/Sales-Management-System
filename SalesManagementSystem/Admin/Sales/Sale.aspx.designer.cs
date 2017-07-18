@@ -22,6 +22,15 @@ namespace SalesManagementSystem.Sales {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblName;
         
         /// <summary>
+        /// UpdatePanelItem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanelItem;
+        
+        /// <summary>
         /// selectItem control.
         /// </summary>
         /// <remarks>
@@ -29,6 +38,15 @@ namespace SalesManagementSystem.Sales {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList selectItem;
+        
+        /// <summary>
+        /// UpdatePanelColor control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanelColor;
         
         /// <summary>
         /// selectColor control.
@@ -40,6 +58,15 @@ namespace SalesManagementSystem.Sales {
         protected global::System.Web.UI.WebControls.DropDownList selectColor;
         
         /// <summary>
+        /// UpdatePanelSize control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanelSize;
+        
+        /// <summary>
         /// selectSize control.
         /// </summary>
         /// <remarks>
@@ -49,48 +76,75 @@ namespace SalesManagementSystem.Sales {
         protected global::System.Web.UI.WebControls.DropDownList selectSize;
         
         /// <summary>
-        /// txtPurchasedFrom control.
+        /// txtQuantity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPurchasedFrom;
+        protected global::System.Web.UI.WebControls.TextBox txtQuantity;
         
         /// <summary>
-        /// txtPurchasedQuantity control.
+        /// UpdatePanel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPurchasedQuantity;
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
         
         /// <summary>
-        /// txtCostPrice control.
+        /// txtItemPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCostPrice;
+        protected global::System.Web.UI.WebControls.TextBox txtItemPrice;
         
         /// <summary>
-        /// txtPurchasedDate control.
+        /// btnGenerateBill control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPurchasedDate;
+        protected global::System.Web.UI.WebControls.Button btnGenerateBill;
         
         /// <summary>
-        /// btnSavePurchase control.
+        /// ItemDetailsId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSavePurchase;
+        protected global::System.Web.UI.WebControls.HiddenField ItemDetailsId;
+        
+        /// <summary>
+        /// Quantity control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField Quantity;
+        
+        /// <summary>
+        /// Price control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField Price;
+        
+        /// <summary>
+        /// Total control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField Total;
     }
 }
