@@ -1,0 +1,5 @@
+C:\Users\user\Documents\Visual Studio 2017\Projects\SalesManagementSystem\DAL\bin\Release\DAL.dll
+C:\Users\user\Documents\Visual Studio 2017\Projects\SalesManagementSystem\DAL\bin\Release\DAL.pdb
+C:\Users\user\Documents\Visual Studio 2017\Projects\SalesManagementSystem\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\SalesManagementSystem\DAL\obj\Release\DAL.dll
+C:\Users\user\Documents\Visual Studio 2017\Projects\SalesManagementSystem\DAL\obj\Release\DAL.pdb

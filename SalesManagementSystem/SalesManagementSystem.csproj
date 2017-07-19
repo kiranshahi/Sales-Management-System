@@ -286,6 +286,7 @@
     <Content Include="Admin\SubCat\SubCatService.asmx" />
     <Content Include="WebForm1.aspx" />
     <None Include="Connected Services\SubCatServices\SubCatService.wsdl" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap-datetimepicker.js" />
     <Content Include="Scripts\bootstrap-datetimepicker.min.js" />

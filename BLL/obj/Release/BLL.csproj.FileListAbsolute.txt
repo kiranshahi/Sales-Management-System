@@ -1,0 +1,7 @@
+C:\Users\user\Documents\Visual Studio 2017\Projects\SalesManagementSystem\BLL\bin\Release\BLL.dll
+C:\Users\user\Documents\Visual Studio 2017\Projects\SalesManagementSystem\BLL\bin\Release\BLL.pdb
+C:\Users\user\Documents\Visual Studio 2017\Projects\SalesManagementSystem\BLL\bin\Release\DAL.dll
+C:\Users\user\Documents\Visual Studio 2017\Projects\SalesManagementSystem\BLL\bin\Release\DAL.pdb
+C:\Users\user\Documents\Visual Studio 2017\Projects\SalesManagementSystem\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2017\Projects\SalesManagementSystem\BLL\obj\Release\BLL.dll
+C:\Users\user\Documents\Visual Studio 2017\Projects\SalesManagementSystem\BLL\obj\Release\BLL.pdb
