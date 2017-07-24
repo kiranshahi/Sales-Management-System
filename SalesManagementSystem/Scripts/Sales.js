@@ -56,3 +56,9 @@ function delElement(a) {
     itemPrice.splice(a, 1);
     displayCart();
 }
+
+function salesObj() {
+    for (var i = 0; i < itemNames.length; i++) {
+        sales[]
+    }
+}

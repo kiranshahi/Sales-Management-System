@@ -281,6 +281,7 @@
     <Content Include="images\jutta.jpg" />
     <Content Include="images\user.png" />
     <Content Include="Admin\Logout.aspx" />
+    <Content Include="Admin\Sales\SalesService.asmx" />
     <Content Include="Scripts\jquery.searchabledropdown-1.0.8.min.js" />
     <Content Include="Scripts\Sales.js" />
     <Content Include="Admin\SubCat\SubCatService.asmx" />
@@ -550,6 +551,10 @@
       <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Admin\Sales\SalesService.asmx.cs">
+      <DependentUpon>SalesService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

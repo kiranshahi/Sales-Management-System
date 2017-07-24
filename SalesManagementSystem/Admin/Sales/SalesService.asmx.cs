@@ -14,9 +14,9 @@ namespace SalesManagementSystem
     {
 
         [WebMethod]
-        public string HelloWorld()
+        public void InsertSales()
         {
-            return "Hello World";
+
         }
     }
 }

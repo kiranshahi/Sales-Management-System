@@ -1,5 +1,11 @@
 ﻿<%@ Page Title="Item Sales" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Sale.aspx.cs" Inherits="SalesManagementSystem.Sales.Sale" %>
 
+<asp:Content ID="js" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        $(document).ready(function () {
+        });
+    </script>
+</asp:Content>
 <asp:Content ID="name" ContentPlaceHolderID="Name" runat="server">
     <span id="lblName" runat="server"></span>
 </asp:Content>
@@ -68,7 +74,7 @@
         <div class="col-lg-6">
             <div id='cart'></div>
 
-            <asp:Button ID="btnGenerateBill" runat="server" Text="Generate Bill" CssClass="btn btn-success" OnClick="BtnGenerateBill_Click"/>
+            <asp:Button ID="btnGenerateBill" runat="server" Text="Generate Bill" CssClass="btn btn-success" OnClick="BtnGenerateBill_Click" />
 
             <asp:HiddenField ID="ItemDetailsId" runat="server" />
             <asp:HiddenField ID="Quantity" runat="server" />

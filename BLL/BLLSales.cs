@@ -6,6 +6,7 @@ namespace BLL
 {
     public class BLLSales
     {
+        //public int MyProperty { get; set; }
         /**
          * Load Item Name to Select option dropdown list
          **/
